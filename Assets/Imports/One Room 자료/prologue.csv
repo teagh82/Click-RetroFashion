@@ -1,0 +1,12 @@
+ID,캐릭터 이름,대사,이미지,VoiceName,index,comment
+1,고은꽃,①안녕'내 이름은 ⓨ고은꽃ⓦ이야,grassFlower03,bongran00,0,<-봉란 자기소개
+,,너의 이름은 뭐야?,,,,
+2,기현,반가워 고은꽃아. 내 이름은 \n기현이야,grassFlower01,bongran01,1,
+3,고은꽃,그렇구나,grassFlower03,,2,
+,,알겠어,grassFlower01,,,
+4,,기현이가 멋있게 말했다.,,,3,
+5,,멋진  기현이는 말을 잘한다.,CG 2F_Biological_2,,4,<-ShowCutScene
+,,오늘은 하늘도 푸르다.,,,,
+6,기현,안녕하세요,grassFlower01,,5,<-HideCutScene
+7,고은꽃,왜 또 인사를 하니?,grassFlower03,,6,
+8,기현,심심해서,grassFlower01,,7,

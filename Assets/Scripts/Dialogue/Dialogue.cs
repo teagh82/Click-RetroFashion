@@ -12,6 +12,16 @@ public enum CameraType
     FlashIn,
     ShowCutScene,
     HideCutScene,
+    AppearSlideCG,
+    DisappearSlideCG,
+    ChangeSlideCG,
+}
+
+public enum AppearType
+{
+    None,
+    Appear,
+    Disappear,
 }
 
 [System.Serializable]
@@ -41,4 +51,8 @@ public class DialogueEvent
 
     public Vector2 line;    //대사를 추출해서 꺼내옴
     public Dialogue[] dialogues;
+
+    [Space]
+    public AppearType appearType;
+    public GameObject[] go_Targets;
 }

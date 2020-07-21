@@ -20,4 +20,14 @@ public class InteractionEvent : MonoBehaviour
 
         return dialogueEvent.dialogues;
     }
+
+    public AppearType GetAppearType()
+    {
+        return dialogueEvent.appearType;
+    }
+
+    public GameObject[] GetTargets()
+    {
+        return dialogueEvent.go_Targets;
+    }
 }
