@@ -6,6 +6,8 @@ using UnityEngine.UI; //Text클래스 사용을 위해 추가
 
 public class DialogueManager : MonoBehaviour
 {
+    public static bool isWaiting = false; //InteractionEvent에서 쓰임
+
     [SerializeField] GameObject go_DialogueBar;
     [SerializeField] GameObject go_DialogueNameBar;
 
@@ -23,6 +25,13 @@ public class DialogueManager : MonoBehaviour
 
     int lineCount = 0; //대화 카운트 
     int contextCount = 0; //대사 카운트 
+
+    //다음 이벤트를 위한 세팅
+    GameObject go_NextEvent;
+
+    public void SetNextEvent(GameObject p_NextEvent) {
+        go_NextEvent = p_NextEvent;
+    }//InteractionEvent에서 쓰임.
 
     //이벤트 끝나면 등장시킬 (혹은 퇴장시킬) 오브젝트들.
     GameObject[] go_Objects; //등장or퇴장시킬 사물,캐릭터
@@ -94,10 +103,16 @@ public class DialogueManager : MonoBehaviour
         txt_Name.text = "";
         theIC.SettingUI(false); //InteractionController에 있음.
         dialogues = p_dialogues;
+
+        StartCoroutine(StartDialogue());
+
+    }
+    IEnumerator StartDialogue() {
+        if (isWaiting)
+            yield return new WaitForSeconds(0.5f);
+        isWaiting = false;
         theCam.CamOriginSetting();
-
         StartCoroutine(CameraTargettingType());
-
 
     }
 
@@ -150,7 +165,8 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator EndDialogue() //대화 종료 
     {
-        if(theCutSceneManager.CheckCutScene()){
+        SettingUI(false);
+        if (theCutSceneManager.CheckCutScene()){
             CutSceneManager.isFinished = false;
             StartCoroutine(theCutSceneManager.CutSceneCoroutine(null, false));
             yield return new WaitUntil(()=>CutSceneManager.isFinished);
@@ -166,8 +182,21 @@ public class DialogueManager : MonoBehaviour
         dialogues = null;
         isNext = false;
         theCam.CameraTargetting(null, 0.05f, true, true);
+
+        //리셋 될때까지 기다리는 명령어
+        yield return new WaitUntil(() => !InteractionController.isInteract);
+
+        //다음 이벤트 확인
+        if (go_NextEvent != null)
+        {
+            go_NextEvent.SetActive(true);
+            go_NextEvent = null;
+        }
+        //다음 이벤트가 없다면 -> 무조건 UI를 띄워줘야한다.
+        else {
+            theIC.SettingUI(true);
+        }
         
-        SettingUI(false);
     }
 
     void AppearOrDisappearObjects()

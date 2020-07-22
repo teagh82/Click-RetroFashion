@@ -296,6 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uAF43"
     line: {x: 1, y: 8}
@@ -350,6 +351,7 @@ MonoBehaviour:
       VoiceName: []
     appearType: 0
     go_Targets: []
+    go_NextEvent: {fileID: 0}
 --- !u!114 &167423874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5379,6 +5381,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.15
   ps_Effect: {fileID: 1440089283}
+--- !u!1 &214779497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214779498}
+  - component: {fileID: 214779499}
+  m_Layer: 0
+  m_Name: Event01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &214779498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214779497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476336313}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &214779499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214779497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAutoEvent: 1
+  dialogueEvent:
+    name: "\uC790\uAE30\uC18C\uAC1C"
+    line: {x: 1, y: 4}
+    dialogues:
+    - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    appearType: 0
+    go_Targets: []
+    go_NextEvent: {fileID: 0}
 --- !u!1 &273028993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,6 +5990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uAF43"
     line: {x: 1, y: 4}
@@ -5945,6 +6023,7 @@ MonoBehaviour:
     go_Targets:
     - {fileID: 1130150125}
     - {fileID: 1505571232}
+    go_NextEvent: {fileID: 0}
 --- !u!114 &431644151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5997,6 +6076,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &476336312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476336313}
+  m_Layer: 0
+  m_Name: AutoEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476336313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476336312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 214779498}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &516680368
 GameObject:
   m_ObjectHideFlags: 0
@@ -6167,6 +6277,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &558569438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558569439}
+  m_Layer: 0
+  m_Name: Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &558569439
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558569438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614359933
 GameObject:
@@ -6390,6 +6530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: 
     line: {x: 1, y: 8}
@@ -6444,6 +6585,7 @@ MonoBehaviour:
       VoiceName: []
     appearType: 0
     go_Targets: []
+    go_NextEvent: {fileID: 0}
 --- !u!114 &1045523384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6651,12 +6793,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: 
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
-      tf_Target: {fileID: 0}
+      tf_Target: {fileID: 1096860419}
       name: 
       contexts: []
       spriteName: []
@@ -6673,31 +6816,7 @@ MonoBehaviour:
       contexts: []
       spriteName: []
       VoiceName: []
-    - cameraType: 0
-      tf_Target: {fileID: 0}
-      name: 
-      contexts: []
-      spriteName: []
-      VoiceName: []
-    - cameraType: 0
-      tf_Target: {fileID: 0}
-      name: 
-      contexts: []
-      spriteName: []
-      VoiceName: []
-    - cameraType: 0
-      tf_Target: {fileID: 0}
-      name: 
-      contexts: []
-      spriteName: []
-      VoiceName: []
-    - cameraType: 0
-      tf_Target: {fileID: 0}
-      name: 
-      contexts: []
-      spriteName: []
-      VoiceName: []
-    - cameraType: 0
+    - cameraType: 1
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -6705,6 +6824,7 @@ MonoBehaviour:
       VoiceName: []
     appearType: 0
     go_Targets: []
+    go_NextEvent: {fileID: 214779497}
 --- !u!1 &1130150125
 GameObject:
   m_ObjectHideFlags: 0
@@ -12949,6 +13069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: 
     line: {x: 1, y: 8}
@@ -13003,6 +13124,7 @@ MonoBehaviour:
       VoiceName: []
     appearType: 0
     go_Targets: []
+    go_NextEvent: {fileID: 0}
 --- !u!114 &1667616064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13175,6 +13297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880af0b811cde0044beed07eb87dd650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uBD88\uB9B0"
     line: {x: 1, y: 8}
@@ -13229,6 +13352,7 @@ MonoBehaviour:
       VoiceName: []
     appearType: 0
     go_Targets: []
+    go_NextEvent: {fileID: 0}
 --- !u!114 &1749122251
 MonoBehaviour:
   m_ObjectHideFlags: 0

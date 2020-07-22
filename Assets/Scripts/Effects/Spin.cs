@@ -8,7 +8,7 @@ public class Spin : MonoBehaviour
     [SerializeField] float spinSpeed;
     [SerializeField] Vector3 spinDir;
 
-    public static bool isFinished = false;
+    public static bool isFinished = true;
 
     // Update is called once per frame
     void Update()

@@ -67,9 +67,9 @@ public class CameraController : MonoBehaviour
         transform.position = originPos;
 
         if (p_isFinish)
-        {
+        {   //thePlayer.Reset(); -> 강의에는 있는데 코드에는 없어...
             //모든 대화가 끝났으면 리셋.
-            theIC.SettingUI(true);
+            InteractionController.isInteract = false; //DialogueManager의 무한 대기 만족
         }
     }
 }

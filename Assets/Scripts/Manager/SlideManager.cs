@@ -8,7 +8,7 @@ public class SlideManager : MonoBehaviour
     [SerializeField] Image img_SlideCG;
     [SerializeField] Animation anim;
 
-    public static bool isFinished = false; //슬라이드 cg가 전부등장하고 난 뒤에 txt출력
+    public static bool isFinished = true; 
     public static bool isChanged = false;
 
     public IEnumerator AppearSlide(string p_SlideName)
