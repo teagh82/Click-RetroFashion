@@ -39,7 +39,7 @@ public class InteractionEvent : MonoBehaviour
     }
 
     void Update() {
-        if (isAutoEvent && DatabaseManager.isFinish) {
+        if (isAutoEvent && DatabaseManager.isFinish && TransferManager.isFinished) {
             DialogueManager theDM = FindObjectOfType<DialogueManager>();
             if (GetAppearType() == AppearType.Appear) theDM.SetAppearObjects(GetTargets());
             else if (GetAppearType() == AppearType.Disappear) theDM.SetDisappearObjects(GetTargets());

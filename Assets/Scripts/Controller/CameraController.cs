@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+
+    //public static bool onlyView = true;
     Vector3 originPos;
     Quaternion originRot;
     Coroutine coroutine;
@@ -17,7 +20,10 @@ public class CameraController : MonoBehaviour
     public void CamOriginSetting()
     {
         originPos = transform.position;
-        originRot = Quaternion.Euler(0, 0, 0);
+        //if (onlyView)
+            originRot = Quaternion.Euler(0, 0, 0);
+        //else
+            //originRot = transform.rotation;
     }
     
     public void CameraTargetting(Transform p_Target, float p_CamSpeed = 0.1f, bool p_isReset = false, bool p_isFinish = false)

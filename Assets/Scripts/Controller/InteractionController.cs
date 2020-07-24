@@ -78,7 +78,7 @@ public class InteractionController : MonoBehaviour
         if (hitInfo.transform.CompareTag("Interaction"))
         {//충돌 객체 분석
             go_TargetNameBar.SetActive(true);
-            //txt_TargetName.text = hitInfo.transform.GetComponent<InteractionType>().GetName();
+            txt_TargetName.text = hitInfo.transform.GetComponent<InteractionType>().GetName();
             if (!isContact) {
                 isContact = true; //최초 실행시, true로 바꾼다.
                 go_InteractiveCrosshair.SetActive(true);
@@ -97,7 +97,7 @@ public class InteractionController : MonoBehaviour
     void NotContact() {
         go_TargetNameBar.SetActive(false);
         if (isContact) {
-            //go_TargetNameBar.SetActive(false);
+            go_TargetNameBar.SetActive(false);
             isContact = false;
             go_InteractiveCrosshair.SetActive(false);
             go_NormalCrosshair.SetActive(true);
