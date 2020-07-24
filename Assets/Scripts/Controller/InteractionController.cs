@@ -187,13 +187,34 @@ public class InteractionController : MonoBehaviour
         Question.isCollide = false;//충돌했다면 다시 원래의 값으로 
 
         InteractionEvent t_Event = hitInfo.transform.GetComponent<InteractionEvent>();
-        theDM.SetNextEvent(t_Event.GetNextEvent());
-        if (t_Event.GetAppearType() == AppearType.Appear) theDM.SetAppearObjects(t_Event.GetTargets());
-        else if (t_Event.GetAppearType() == AppearType.Disappear) theDM.SetDisappearObjects(t_Event.GetTargets());
 
-        theDM.ShowDialogue(t_Event.GetDialogue());
+        //경우에 따라서 장소 이동
+        if(hitInfo.transform.GetComponent<InteractionType>().isObject)
+        {
+            DialogueCall(t_Event);
+        }
+        else
+        {
+            TransferCall();
+        }
 
         //theDM.ShowDialogue();
+    }
+    
+    void TransferCall()
+    {
+        string t_SceneName = hitInfo.transform.GetComponent<InteractionDoor>().GetSceneName();
+        string t_LocationName = hitInfo.transform.GetComponent<InteractionDoor>().GetLocationName();
+        StartCoroutine(FindObjectOfType<TransferManager>().Transfer(t_SceneName, t_LocationName));
+    }
+
+    void DialogueCall(InteractionEvent p_Event) //윗부분 함수로 뺌
+    {
+        theDM.SetNextEvent(p_Event.GetNextEvent());
+        if (p_Event.GetAppearType() == AppearType.Appear) theDM.SetAppearObjects(p_Event.GetTargets());
+        else if (p_Event.GetAppearType() == AppearType.Disappear) theDM.SetDisappearObjects(p_Event.GetTargets());
+
+        theDM.ShowDialogue(p_Event.GetDialogue());
     }
 }
 
