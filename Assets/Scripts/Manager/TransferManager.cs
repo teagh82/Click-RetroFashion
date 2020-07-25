@@ -7,7 +7,7 @@ public class TransferManager : MonoBehaviour
 {
     SplashManager splash;
     InteractionController theIC;
-    // InteractionController IC;
+    InteractionController IC;
     bool isChange = false;
 
     public static bool isFinished = true;
@@ -45,7 +45,7 @@ public class TransferManager : MonoBehaviour
         yield return new WaitUntil(() => SplashManager.isFinished);
 
         isFinished = true;
-        theIC.SettingUI(true);
+       // theIC.SettingUI(true);
 
     }
 
@@ -53,7 +53,7 @@ public class TransferManager : MonoBehaviour
     void Start()
     {
         splash = this.gameObject.transform.GetComponent<SplashManager>();
-        //  IC = this.gameObject.transform.GetComponent<InteractionController>();
+         IC = this.gameObject.transform.GetComponent<InteractionController>();
         theIC = FindObjectOfType<InteractionController>();
 
     }

@@ -24,6 +24,15 @@ public enum AppearType
     Disappear,
 }
 
+
+[System.Serializable]
+public class EventTiming {
+    public int eventNum;
+    public int[] eventConditions;
+    public bool conditionFlag;
+    public int eventEndNum;
+}
+
 [System.Serializable]
 public class Dialogue
 {
@@ -48,9 +57,14 @@ public class Dialogue
 public class DialogueEvent
 {
     public string name; //어떤 이벤트인지 알도록. 기능적의미X
+    public EventTiming eventTiming;
 
     public Vector2 line;    //대사를 추출해서 꺼내옴
     public Dialogue[] dialogues;
+
+    [Space]
+    public Vector2 lineB;
+    public Dialogue dialoguesB;
 
     [Space]
     public AppearType appearType;

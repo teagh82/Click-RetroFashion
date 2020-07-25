@@ -299,6 +299,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uAF43"
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
@@ -345,6 +350,14 @@ MonoBehaviour:
       VoiceName: []
     - cameraType: 0
       tf_Target: {fileID: 167423872}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
+      tf_Target: {fileID: 0}
       name: 
       contexts: []
       spriteName: []
@@ -5427,6 +5440,11 @@ MonoBehaviour:
   isAutoEvent: 1
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C"
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 4}
     dialogues:
     - cameraType: 0
@@ -5448,6 +5466,14 @@ MonoBehaviour:
       spriteName: []
       VoiceName: []
     - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -6006,6 +6032,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uAF43"
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 4}
     dialogues:
     - cameraType: 0
@@ -6032,7 +6063,15 @@ MonoBehaviour:
       contexts: []
       spriteName: []
       VoiceName: []
-    appearType: 2
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    appearType: 0
     go_Targets:
     - {fileID: 1130150125}
     - {fileID: 1505571232}
@@ -6547,6 +6586,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: 
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
@@ -6592,6 +6636,14 @@ MonoBehaviour:
       spriteName: []
       VoiceName: []
     - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -6810,6 +6862,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: 
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
@@ -6831,6 +6888,14 @@ MonoBehaviour:
       spriteName: []
       VoiceName: []
     - cameraType: 1
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -12242,6 +12307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csv_FileName: prologue
+  eventFlags: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!114 &1641678692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13099,6 +13165,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: 
+    eventTiming:
+      eventNum: 0
+      eventConditions: 
+      conditionFlag: 0
+      eventEndNum: 0
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
@@ -13144,6 +13215,14 @@ MonoBehaviour:
       spriteName: []
       VoiceName: []
     - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -13327,6 +13406,11 @@ MonoBehaviour:
   isAutoEvent: 0
   dialogueEvent:
     name: "\uC790\uAE30\uC18C\uAC1C \uBD88\uB9B0"
+    eventTiming:
+      eventNum: 2
+      eventConditions: 01000000
+      conditionFlag: 1
+      eventEndNum: 3
     line: {x: 1, y: 8}
     dialogues:
     - cameraType: 0
@@ -13372,6 +13456,14 @@ MonoBehaviour:
       spriteName: []
       VoiceName: []
     - cameraType: 0
+      tf_Target: {fileID: 0}
+      name: 
+      contexts: []
+      spriteName: []
+      VoiceName: []
+    lineB: {x: 0, y: 0}
+    dialoguesB:
+      cameraType: 0
       tf_Target: {fileID: 0}
       name: 
       contexts: []
@@ -13543,6 +13635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30b64d2c4cd69a42bc031f090a8e33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOnlyView: 0
   sceneName: Collider
   locationName: GroundToCollider
 --- !u!114 &1771843915

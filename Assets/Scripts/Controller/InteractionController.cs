@@ -51,6 +51,7 @@ public class InteractionController : MonoBehaviour
 
         void Start() {
         theDM = FindObjectOfType<DialogueManager>();
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -210,10 +211,13 @@ public class InteractionController : MonoBehaviour
 
     void DialogueCall(InteractionEvent p_Event) //윗부분 함수로 뺌
     {
-        theDM.SetNextEvent(p_Event.GetNextEvent());
-        if (p_Event.GetAppearType() == AppearType.Appear) theDM.SetAppearObjects(p_Event.GetTargets());
-        else if (p_Event.GetAppearType() == AppearType.Disappear) theDM.SetDisappearObjects(p_Event.GetTargets());
+        if (DatabaseManager.instance.eventFlags[p_Event.GetEventNumber()])
+        {
+            theDM.SetNextEvent(p_Event.GetNextEvent());
+            if (p_Event.GetAppearType() == AppearType.Appear) theDM.SetAppearObjects(p_Event.GetTargets());
+            else if (p_Event.GetAppearType() == AppearType.Disappear) theDM.SetDisappearObjects(p_Event.GetTargets());
 
+        }
         theDM.ShowDialogue(p_Event.GetDialogue());
     }
 }

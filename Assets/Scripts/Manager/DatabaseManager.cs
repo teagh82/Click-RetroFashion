@@ -12,6 +12,8 @@ public class DatabaseManager : MonoBehaviour
 
     public static bool isFinish = false;
 
+    public bool[] eventFlags = new bool[100];
+
     void Awake()
     {
 
@@ -30,6 +32,7 @@ public class DatabaseManager : MonoBehaviour
 
     public Dialogue[] GetDialogue(int _StartNum, int _EndNum)
     {
+      
         List<Dialogue> dialogueList = new List<Dialogue>();
 
         for (int i = 0; i <= _EndNum - _StartNum; i++)

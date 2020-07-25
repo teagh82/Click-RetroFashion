@@ -6,12 +6,19 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Transform tf_Crosshair;
+ // public static Transform instance;
 
     // Update is called once per frame
+
+    private void Awake()
+    {
+      DontDestroyOnLoad(this.gameObject);
+    }
     void Update()
     {
         CrosshairMoving();
     }
+
 
     void CrosshairMoving()
     {

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Spin : MonoBehaviour
 {
+    Transform tf_Target;
+
     [SerializeField] float spinSpeed;
     [SerializeField] Vector3 spinDir;
 
@@ -14,6 +16,11 @@ public class Spin : MonoBehaviour
     void Update()
     {
         transform.Rotate(spinDir * spinSpeed * Time.deltaTime);
+    }
+
+    private void Start()
+    {
+     //   tf_Target = PlayerController.instance.transform;
     }
 
     public IEnumerator SetAppearOrDisappear(bool p_Flag)

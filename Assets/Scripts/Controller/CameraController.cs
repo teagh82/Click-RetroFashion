@@ -7,13 +7,21 @@ public class CameraController : MonoBehaviour
 {
 
     //public static bool onlyView = true;
+   //GameObject cameratmp;
     Vector3 originPos;
     Quaternion originRot;
     Coroutine coroutine;
 
     InteractionController theIC;
+
+    private void Awake()
+    {
+       // DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
+       // cameratmp = GameObject.Find("Main Camera");
         theIC = FindObjectOfType<InteractionController>();
     }
 
