@@ -71,4 +71,7 @@ public class DialogueEvent
     public GameObject[] go_Targets;
     [Space]
     public GameObject go_NextEvent;
+
+    public bool isSame;
+
 }

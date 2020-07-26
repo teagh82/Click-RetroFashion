@@ -196,7 +196,12 @@ public class InteractionController : MonoBehaviour
         }
         else
         {
-            TransferCall();
+            if(t_Event != null && t_Event.GetDialogue() != null){
+                DialogueCall(t_Event);
+            }else{
+                TransferCall();
+            }
+            
         }
 
         //theDM.ShowDialogue();
