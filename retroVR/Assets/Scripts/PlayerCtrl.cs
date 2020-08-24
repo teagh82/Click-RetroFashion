@@ -49,8 +49,24 @@ public class PlayerCtrl : MonoBehaviour {
                 if (GageTimer >= 1 || MagnetButton.Triggered)
                     //GageTimer이 1이상 이거나 자석버튼을 작동시키면
                 {
-                    Application.LoadLevel(1);
-                    //1번 Scene을 불러온다.
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("GameGuide");
+                    //Application.LoadLevel(1);
+                    //GameGuide씬을 불러온다.
+                    GageTimer = 0;
+                    //입력을 완료했으니 GageTimer를 0으로 한다.
+                }
+            }
+
+            if (hit.collider.CompareTag("option"))
+            //hit에 맞은 오브젝트의 Tag가 option일 경우에만
+            {
+                GageTimer += 1.0f / 3.0f * Time.deltaTime;
+                // 3초 동안 GageTimer을 1로 증가시킨다.
+                if (GageTimer >= 1 || MagnetButton.Triggered)
+                //GageTimer이 1이상 이거나 자석버튼을 작동시키면
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Option");
+                    //환경설정 씬을 불러온다.
                     GageTimer = 0;
                     //입력을 완료했으니 GageTimer를 0으로 한다.
                 }
