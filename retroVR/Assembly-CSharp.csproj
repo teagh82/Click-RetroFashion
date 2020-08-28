@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
      <None Include="Assets\Satomi 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
+     <None Include="Assets\Rin New 3d - Anime Style\ReadMe!.txt" />
      <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
      <None Include="Assets\Asset Store\Medieval_Toon_Character\ReadMe.txt" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />

@@ -27,8 +27,8 @@ public class UIManager : MonoBehaviour
     private enum ViewState
     {
         frontView,
-        LeftView,
         rightView,
+        LeftView,
         backView
     }
 
@@ -72,7 +72,7 @@ public class UIManager : MonoBehaviour
         {
             currentState = ViewState.rightView;
             character.transform.rotation = characterRightRotation;
-            viewStatusText.text = leftText;
+            viewStatusText.text = rightText;
         }
         else if (currentState == ViewState.rightView)
         {
@@ -84,7 +84,7 @@ public class UIManager : MonoBehaviour
         {
             currentState = ViewState.LeftView;
             character.transform.rotation = characterLeftRotation;
-            viewStatusText.text = rightText;
+            viewStatusText.text = leftText;
         }
         else if (currentState == ViewState.LeftView)
         {
@@ -100,7 +100,7 @@ public class UIManager : MonoBehaviour
         {
             currentState = ViewState.LeftView;
             character.transform.rotation = characterLeftRotation;
-            viewStatusText.text = rightText;
+            viewStatusText.text = leftText;
         }
         else if (currentState == ViewState.LeftView)
         {
@@ -112,7 +112,7 @@ public class UIManager : MonoBehaviour
         {
             currentState = ViewState.rightView;
             character.transform.rotation = characterRightRotation;
-            viewStatusText.text = leftText;
+            viewStatusText.text = rightText;
         }
         else if (currentState == ViewState.rightView)
         {
