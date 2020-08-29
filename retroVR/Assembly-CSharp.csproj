@@ -86,16 +86,20 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardAndroidDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+     <Compile Include="Assets\EasyGrassSubstance\Example Scene\ObjectRotation.cs" />
      <Compile Include="Assets\HDRPFurniturePack\Lamp Assets\Scripts\Lamp.cs" />
      <Compile Include="Assets\Satomi 3d - Anime Style\Demo\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
      <Compile Include="Assets\Scripts\ObjectText.cs" />
      <Compile Include="Assets\Scripts\PlayerCtrl.cs" />
      <None Include="Assets\Satomi 3d - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
+     <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\Cardboard\Resources\SkyboxMesh.shader" />
      <None Include="Assets\Rin New 3d - Anime Style\ReadMe!.txt" />
      <None Include="Assets\Cardboard\Resources\UI\CardboardReticleShader.shader" />
      <None Include="Assets\Asset Store\Medieval_Toon_Character\ReadMe.txt" />
+     <None Include="Assets\EasyGrassSubstance\Documentation.txt" />
+     <None Include="Assets\KajamansRoads\Free\ReadMe.txt" />
      <None Include="Assets\Cardboard\Resources\UnlitTexture.shader" />
      <None Include="Assets\Cardboard\Distortion\CardboardDistortion.cginc" />
      <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
@@ -637,31 +641,31 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/user/Documents/Click-RetroFeshion/retroVR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/kjd3m/Documents/Click-RetroFashion/retroVR/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
