@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Department.unity
+- path: Assets/Scenes/PastSchool.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
