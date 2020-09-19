@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PastSchool.unity
+- path: Assets/Scenes/Friend's House.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
